@@ -8,18 +8,10 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "assets/image/login_image.png",
+              "assets/login_image.png",
               fit: BoxFit.cover,
             ),
-            SizedBox(
-              height: 20.0,
-            ),
-
-            ElevatedButton(
-              child: Text("Login"),
-              style: TextButton.styleFrom(),
-              onPressed: () {},
-            ),
+            
 
             Text(
               "Welcome guys",
@@ -47,7 +39,18 @@ class LoginPage extends StatelessWidget {
               ),
             ),
               ],
+              ),
+
+            SizedBox(
+              height: 20.0,
             ),
+              
+            ElevatedButton(
+              child: Text("Login"),
+              style: TextButton.styleFrom(),
+              onPressed: () {},
+            ),
+           
           ],
         ));
   }
